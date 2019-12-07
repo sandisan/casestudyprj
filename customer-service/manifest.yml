@@ -1,0 +1,9 @@
+applications:
+- name: customer-service-491968
+  path: target/customer-service-0.0.1-SNAPSHOT.jar
+  memory: 700M
+  env:
+    SPRING-PROFILES-ACTIVE: dev
+  services:
+  - service-registry-491968
+  - rabbit-mq-491968
